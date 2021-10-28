@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528950069694",
+    "project_id": "parking-buddies-16dfe",
+    "storage_bucket": "parking-buddies-16dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528950069694:android:e06b6db3b98e826e0fd1ef",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528950069694-lm678mfg14amer2v4daldnr9lq50evm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5-V8PzElfxXeuDeApDK15A0WAQpBcBZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528950069694-lm678mfg14amer2v4daldnr9lq50evm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
