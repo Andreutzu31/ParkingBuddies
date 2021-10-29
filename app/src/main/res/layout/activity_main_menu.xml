@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <Button
+        android:id="@+id/delog"
+        android:onClick="logout"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:text="Delogheaza-te"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="176dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/exo"
+        android:text="Parking"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="48sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/pacificoregular"
+        android:text="Buddies"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNotificaSofer"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:text="Notifica un sofer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <Button
+        android:id="@+id/buttonCautaLocDeParcare"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:text="Cauta Un Loc De Parcare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <Button
+        android:id="@+id/inregistreazaLocDeParcare"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:text="Inregistreaza loc de parcare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
