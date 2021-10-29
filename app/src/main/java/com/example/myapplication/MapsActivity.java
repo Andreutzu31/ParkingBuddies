@@ -94,6 +94,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void getDeviceLocation() {
         Log.d("Maps", "getDeviceLocation: getting the devices current location");
+        LocationAdministration.setMock(28, -16, 1);
 
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -104,7 +105,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 public void onComplete(@NonNull Task task) {
                     if (task.isSuccessful()) {
                         Log.d("Maps", "onComplete: found location!");
-                        Location currentLocation = (Location) task.getResult();
+                        Location currentLocation = (Location) task.getResult();/**/
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()), 10));
 
                     } else {
