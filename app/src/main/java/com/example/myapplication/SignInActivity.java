@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static com.example.myapplication.FirebaseService.getToken;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +30,7 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        mEmail=findViewById(R.id.emailEditField);
+        mEmail=findViewById(R.id.editTextTextEmailAddress);
         mPassword=findViewById(R.id.editTextTextPassword);
         mLoginBtn=findViewById(R.id.buttonSignIn2);
         fAuth= FirebaseAuth.getInstance();

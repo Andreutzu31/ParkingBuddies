@@ -14,6 +14,8 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class LocationAdministration implements LocationListener {
 
     @Override

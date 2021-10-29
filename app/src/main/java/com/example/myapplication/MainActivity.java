@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,25 +17,25 @@ public class MainActivity extends AppCompatActivity {
 
         configureSingInActivity();
         configureSingUpActivity();
-        }
+    }
 
-        private void configureSingInActivity() {
-            Button nextButton=(Button) findViewById(R.id.buttonSignIn);
-            nextButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this, SignInActivity.class));
-                }
-            });
-        }
+    private void configureSingInActivity() {
+        Button nextButton=(Button) findViewById(R.id.buttonSignIn);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignInActivity.class));
+            }
+        });
+    }
 
-        private void configureSingUpActivity() {
-            Button nextButton=(Button) findViewById(R.id.buttonSignUp);
-            nextButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this, SignUpActivity.class));
-                }
-            });
-        }
+    private void configureSingUpActivity() {
+        Button nextButton=(Button) findViewById(R.id.buttonSignUp);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+            }
+        });
+    }
 }
