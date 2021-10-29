@@ -29,6 +29,7 @@ public class MainMenuActivity extends AppCompatActivity {
         new PushNotification(token, "Message", "location").execute();
 
         sendNotification();
+        openMaps();
     }
 
     public void logout(View view){
@@ -46,4 +47,15 @@ public class MainMenuActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void openMaps() {
+        Button nextButton=(Button) findViewById(R.id.inregistreazaLocDeParcare);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, MapsActivity.class));
+            }
+        });
+    }
+
 }
